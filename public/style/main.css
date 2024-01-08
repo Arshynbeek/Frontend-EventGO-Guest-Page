@@ -1,0 +1,107 @@
+body {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  padding: 24px 40px;
+  background-color: var(--primary);
+}
+
+.main {
+  position: relative;
+  width: 100%;
+  height: calc(100% - 52px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-title {
+  text-align: center;
+  margin: 24px auto;
+  white-space: nowrap;
+}
+
+.qr {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  padding: 8px 8px 8px 20px;
+  background-color: var(--white);
+  border-radius: 8px;
+}
+
+.qr p {
+  color: var(--black);
+  word-wrap: break-word;
+  font-weight: 600;
+}
+
+.rights {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 24px 0 0 0;
+}
+
+.rights div {
+  display: flex;
+  gap: 8px;
+}
+
+.download {
+  display: none;
+}
+
+.contact img {
+  width: 24px;
+  height: 24px;
+}
+
+@media screen and (max-width: 1000px) {
+  body {
+    padding: 104px 24px 40px 24px;
+  }
+
+  .main {
+    justify-content: space-between;
+    gap: 24px;
+  }
+
+  .qr {
+    display: none;
+  }
+
+  .download {
+    display: flex;
+  }
+
+  .rights div p {
+    display: none;
+  }
+
+  .rights {
+    box-sizing: initial;
+    width: 100%;
+    padding: 32px 0 0 0;
+    margin: 0;
+  }
+
+  .rights, .rights div {
+    flex-direction: column;
+    gap: 8px;
+  }
+}
