@@ -8,7 +8,13 @@
   --primary: #140C74;
   --white: #FFFFFF;
   --black: #000000;
-  --grey-1: #666D80;
+  --grey: #666D80;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--primary);
 }
 
 h1, h2, h3, h4, h5, h6,
@@ -21,44 +27,22 @@ p, a, li, small, strong, span {
 
 h1 {
   font-size: 32px;
+  font-weight: 600;
 }
 
-p, a {
-  font-size: 16px;
-}
-
-span {
-  font-size: 16px;
-  color: var(--black);
+a {
+  font-size: 14px;
 }
 
 button {
-  display: flex;
-  align-items: center;
-  gap: 8px;
+  padding: 12px 24px;
   border: none;
   border-radius: 8px;
   background-color: var(--white);
-  padding: 12px 24px;
-  font-size: 16px;
-  font-weight: 500;
 }
 
-.rights a, .rights p {
-  color: var(--grey-1);
-}
-
-@media screen and (max-width: 1000px) {
-  * {
-    box-sizing: initial;
-  }
-
+@media screen and (max-width: 1024px) {
   h1 {
     font-size: 16px;
-  }
-
-  p, a {
-    font-size: 14px;
-    font-weight: 400;
   }
 }
