@@ -125,3 +125,9 @@
     display: none;
   }
 }
+
+@media screen and (max-height: 550px) {
+  .main {
+    padding: 24px;
+  }
+}
